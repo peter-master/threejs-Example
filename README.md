@@ -7,6 +7,9 @@ npm init @vitejs/app
 npm install three
 
 
+執行程式
+npm run dev
+
 參考的教學:
 https://www.youtube.com/watch?v=Q7AOvWpIVHU
 載入3d模型(glb)
