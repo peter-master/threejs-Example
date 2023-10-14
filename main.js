@@ -24,7 +24,7 @@ const geometry= new THREE.TorusGeometry(10,3,16,100)
 // const material = new THREE.MeshBasicMaterial({color:0xFF6347,wireframe:true});//no light
 const material = new THREE.MeshStandardMaterial({color:0xFF6347});//have light
 const torus=new THREE.Mesh(geometry,material);//mesh=material+geometry
-// scene.add(torus);
+// scene.add(torus); 要顯示請解除註解
 
 //lights
 const pointLight=new THREE.PointLight(0xffffff,10,100);
@@ -74,10 +74,6 @@ loader.load( 'watermelonman.glb', function ( gltf ) {
 
 function animate(){
   requestAnimationFrame( animate );//loop
-  // torus.rotation.x+=0.01;
-  // torus.rotation.y+=0.005;
-  // torus.rotation.z+=0.01;
-  // console.log(model.rotation);
   if(model){
 
     model.rotation.y+=0.05;
